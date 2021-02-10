@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 850px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.card {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 200px;
+  border: 1px solid;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  background: lightgrey;
+  transition: transform 0.6s;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  background: white;
+  border: 2px solid;
+}
+
+.back {
+  transform: rotateY(0deg);
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.success {
+  background: #a1d485;
+}
